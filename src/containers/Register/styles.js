@@ -11,12 +11,12 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const LoginImage = styled.img`
-  height: 80%;
+export const RegisterImage = styled.img`
+  height: 90%;
 `
 
 export const ContainerItens = styled.div`
-  height: 80%;
+  height: 90%;
   padding: 25px 75px;
 
   border-radius: 0 10px 10px 0;
@@ -36,18 +36,18 @@ export const ContainerItens = styled.div`
     color: #fff;
 
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   img {
     margin-left: auto;
     margin-right: auto;
-    width: 260px;
-    height: 94px;
+    width: 240px;
+    height: 64px;
   }
 `
 
@@ -58,8 +58,8 @@ export const Label = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: ${(props) => (props.error ? '10' : '35')};
+  margin-bottom: 2px;
 `
 
 export const Input = styled.input`
@@ -69,6 +69,7 @@ export const Input = styled.input`
   background: #ffffff;
   border: ${(props) => (props.error ? '2px solid #CC1717' : 'none')};
   padding-left: 10px;
+  margin-bottom: 15px;
 
   box-shadow: 3px 3px 10px 0px rgba(74, 144, 226, 0.19);
 `
